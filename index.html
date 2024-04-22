@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">s1000r Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this survey</p>
+    <form id="survey-form">
+        <fieldset id="information">
+            <label id="name-label" for="name">Name <input type="text" name="surveyname" id="name" required
+                    placeholder="Enter your name"></label>
+            <label id="email-label" for="email">Email <input type="email" name="surveyemail" id="email" required
+                    placeholder="Enter your email"></label>
+            <label id="number-label" for="number">Age <input type="number" id="number" name="surveyage" min="12" max="120"
+                    required placeholder="Age"></label>
+        </fieldset>
+        <hr>
+        <fieldset id="working">
+            <label for="dropdown">
+                Do you enjoy the working environment at s1000r?
+                <select  id="dropdown">
+                    <option value="">Selection an option</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommand working at s1000r?</legend>
+            <label for="recommand">Yes <input value="yes" type="radio" name="yes-no" checked id="recommand"></label>
+            <label for="norecommand">No <input value="no" type="radio" name="yes-no" id="norecommand"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What could be improved in the workplace? (select all that apply)</legend>
+            <label for="mbreaks"><input type="checkbox" value="breaks" id="mbreaks"> More breaks</label>
+            <label for="bactivities"><input type="checkbox" value="activities" id="bactivities"> More bonding
+                activities</label>
+            <label for="sevents"><input type="checkbox" value="events" id="sevents"> More social events</label>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label id="comments" for="comments">
+                Any additional comments or suggestions to improve s1000r?
+                <textarea name="additional" id="comments" cols="40" rows="4"
+                    placeholder="Comments and suggestions..."></textarea>
+            </label>
+        </fieldset>
+
+        <div class="submit-button">
+            <input type="submit" value="Submit" id="submit" name="submit-form">
+        </div>
+        
+    </form>
+</body>
+
+</html>

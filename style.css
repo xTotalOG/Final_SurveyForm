@@ -1,0 +1,85 @@
+body {
+    font-family: Calibri;
+    background-image: url("");
+}
+
+#title {
+    margin: 1.1em auto;
+    text-align: center;
+}
+
+#description {
+    margin: 30px auto;
+    text-align: center;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+label {
+    display: block;
+    margin: 10px auto;
+    padding: 0 20px;
+
+}
+
+fieldset {
+    border: none;
+}
+
+hr {
+    margin: 10px auto;
+    width: 95%;
+    height: 2px;
+    border: 1px solid grey;
+}
+
+input {
+    vertical-align: middle;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 3px;
+
+}
+
+#name,
+#email,
+#number {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+legend {
+    padding-left: 20px;
+}
+
+#dropdown {
+    display: block;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 3px;
+}
+
+textarea {
+    margin-top: 20px;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit {
+    width: 60%;
+    margin-bottom: 25px;
+    background-color: rgb(192, 191, 191);
+    border: 1px solid black;
+}
